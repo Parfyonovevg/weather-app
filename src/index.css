@@ -1,13 +1,102 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #736565;
+}
+
+.App {
+  margin: 0 auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./images/forest-5038025_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.App.hot {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./images/warm-bg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.App.cold {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./images/cold-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 50%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  transform: translateY(-5%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-box {
+  width: 100%;
+  text-align: center;
+}
+
+.search-bar {
+  width: 80%;
+  height: 6vh;
+  outline: none;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #d1cccc;
+  transition: transform 0.4s ease-in-out;
+}
+
+.search-bar:focus {
+  border: 1px solid #473c3c;
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+.info-box {
+  text-align: center;
+}
+
+.location {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+.date {
+  font-style: italic;
+}
+.weather-box {
+  text-align: center;
+}
+.temperature {
+  font-size: 6rem;
+  font-weight: bold;
+  text-shadow: 3px 4px 2px #434242;
+  background-color: rgba(134, 132, 132, 0.2);
+  box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.weather {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
 }
